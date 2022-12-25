@@ -7,8 +7,9 @@ body {
 }
 
 #city {
-  color: #188753;
-  font-size: 35px;
+  color: #48484a;
+  font-size: 45px;
+  font-style: bold;
   font-weight: 100;
   line-height: 28px;
   margin-top: 20px;
@@ -33,12 +34,13 @@ ul {
 .left {
   padding-left: 90px;
 }
+.background-app {
+  background-image: url("https://soranews24.com/wp-content/uploads/sites/3/2015/07/3.gif");
 
-.temp-info {
-  color: #7c7c7c;
-  font-size: 16px;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
 }
-
 .weather-app {
   border: 1px solid #dadde1;
   padding: 15px;
@@ -46,6 +48,7 @@ ul {
   border-radius: 10px;
   max-width: 600px;
   height: 700px;
+  background-color: white;
 }
 
 .temperature {
@@ -53,11 +56,11 @@ ul {
   color: #ec6f4d;
 }
 
-#icon {
-  margin-right: 0px;
-  height: 100px;
-  width: 100px;
-  margin-bottom: 40px;
+.weather-forecast-temperatures,
+.weather-forecast-temperature-max,
+.weather-forecast-temperature-min {
+  text-align: center;
+  margin-left: 1px;
 }
 
 .units {
@@ -101,13 +104,18 @@ a {
 
 .btn-primary {
   margin-left: 20px;
-  background-color: #188753;
-  border-color: #188753;
+  background-color: #ec6f4d;
+  border-color: #48484a;
   color: white;
 }
 
+.btn-primary:hover {
+  background-color: #48484a;
+  border-color: #48484a;
+}
+
 .current-button,
-current-location-button {
+.current-location-button {
   margin-top: 20px;
   margin-left: 250px;
 }
@@ -118,13 +126,16 @@ form {
   margin-right: 20px;
 }
 
-.weekday {
-  font-size: 20px;
+.weather-forecast-date {
   text-align: center;
 }
-
-.img-icon {
+.img {
   text-align: center;
+  margin: 0 auto;
+}
+#icon {
+  text-align: center;
+  margin-bottom: 50px;
 }
 
 img {
@@ -158,5 +169,16 @@ img {
   font-size: 80%;
   font-weight: 400;
   line-height: 1.5;
-  padding-left: 365px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+#weather-refresh {
+  background-color: #ec6f4d;
+  border-color: #48484a;
+}
+
+#weather-refresh:hover {
+  background-color: #48484a;
+  border-color: #48484a;
 }
