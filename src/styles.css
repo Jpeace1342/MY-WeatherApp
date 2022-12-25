@@ -64,6 +64,20 @@ ul {
   position: relative;
   top: -32px;
 }
+.active {
+  color: #7c7c7c;
+}
+.active:hover {
+  cursor: default;
+}
+
+a:hover {
+  color: #7c7c7c;
+  cursor: default;
+}
+a {
+  text-decoration: none;
+}
 
 .form-control {
   margin-left: 0;
