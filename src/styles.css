@@ -172,6 +172,15 @@ img {
   text-align: center;
   margin: 0 auto;
 }
+.sourcecode {
+  color: #ec6f4d;
+  font-style: bold;
+}
+
+.sourcecode:hover {
+  color: #7c7c7c;
+  font-style: bold;
+}
 
 #weather-refresh {
   background-color: #ec6f4d;
